@@ -1,0 +1,240 @@
+.contract{
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  background: rgb(255, 255, 255);
+}
+.contract .contractinfo{
+  width: 100%;
+  height:100%;
+  background:#fff;
+}
+.table-list{
+  height: 100%;
+  margin: 15px 5px 0 5px;
+  box-shadow:   0px 0px 5px 1px #ccc,   /*上边阴影  */
+                0 0 0 0 #ccc,   /*左边阴影 */
+                0 0 0 0 #ccc,    /*右边阴影 */
+                0 0 0 0 #ccc;    /*下边阴影 */
+  border:1px solid #ccc;
+}
+.contract-topd{
+  width: 99%;
+  height: 96px;
+  line-height: 60px;
+  box-shadow:0px 1px 6px 0px #ccc;    /*下边阴影 */
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  margin: 0 8px;
+}
+.contract-tops{
+  width: 99%;
+  height: 40px;
+  line-height: 30px;
+  background: rgb(53, 134,185);
+  border-radius: 6px;
+  box-shadow:0px 1px 6px 0px #ccc;    /*下边阴影 */
+  display: flex;
+  padding: 4px 10px;
+  box-sizing: border-box;
+  margin: 4px 10px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.conleft{
+  line-height: initial;
+}
+.conleft .searchcon{
+  display: inline-block;
+  text-align: center;
+  margin-left: 10px; 
+  margin-right: 14px;
+  width: 150px;
+}
+.conleft .searchcon:nth-child(2){
+  margin-left: 34px;
+}
+.conleft .searchcon:nth-child(3){
+  width: 165px;
+}
+.conleft .searchcons{
+  display: inline-block;
+  text-align: center;
+  margin-left: 10px; 
+  margin-right: 14px;
+  width: 175px;
+}
+.el-row /deep/ .el-col{
+  display: flex;
+}
+.el-textarea /deep/ .el-textarea__inner {
+  height: 404px!important;
+  min-height: 404px!important;
+}
+.el-table /deep/ .el-table__body-wrapper {
+  height: 250px;
+}
+.conleft .el-cascader /deep/ {
+  margin-top: 14px;
+}
+.conleft .el-button--primary /deep/ {
+  height: 31px;
+  line-height: 0px;
+  margin-top: 14px;
+}
+.conleft .el-button{
+  font-size: 15px;
+  height: 31px;
+  line-height: 0px;
+  margin-top: 14px;
+}
+.conright .el-button--primary.is-plain /deep/ {
+  height: 32px;
+  line-height: 0px;
+  /* border-color: #ccc;
+  background: #fff;
+  color: #666; */
+}
+.el-table thead.is-group th /deep/ {
+  border: 1px solid #ebeef5;
+}
+.block {
+  position:absolute;
+  right:17px;
+  bottom:10px;
+}
+/* 编辑表格下 的保存取消按钮 */
+.blocks{
+  position:absolute;
+  right: 5%;
+  bottom: 15%;
+}
+.el-date-editor.el-input, .el-date-editor.el-input__inner /deep/ {
+  width: 130px;
+}
+.upload-demo /deep/ .el-upload input[type=file] {
+  display: none;
+}
+.addtab{
+  display: inline-block;
+  margin-left: 6px;
+  margin-top: 4px;
+}
+/* 合同名称 输入框 */
+.inputs .el-input--mini .el-input__inner /deep/ {
+  width: 200px;
+}
+.el-table__body-wrapper .el-table_1_column_69_column_78{
+  padding-right:30px !important;
+} 
+.contracts{
+  display: flex;
+  justify-content: space-between;
+  overflow: none;
+  width: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-right: 40px;
+  position: relative;
+}
+.contracts span{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.contracts img{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 20px;
+  top: 0px;
+}
+#form1 #load{
+  padding: 7px 15px;
+  font-size: 12px;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #409EFF;
+  border-color: #409EFF;
+  display: inline-block;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  border: 1px solid #dcdfe6;
+}
+/* 合同编号 */
+.el-table /deep/ thead.is-group th.el-table_6_column_841_column_843{
+  border-bottom: none;
+}
+.el-table /deep/ thead.is-group th.el-table_6_column_841_column_843_column_844,
+.el-table /deep/ thead.is-group th.el-table_6_column_841_column_843_column_845,
+.el-table /deep/ thead.is-group th.el-table_6_column_841_column_843_column_846,
+.el-table /deep/ thead.is-group th.el-table_6_column_841_column_843_column_847,
+.el-table /deep/ thead.is-group th.el-table_6_column_841_column_843_column_848{
+  /* background: #fff; */
+  background: rgb(252, 242, 228);
+  border-right: none;
+  border-top: none;
+}
+.dijitDialogTitleBar{
+  display: flex;
+  justify-content: space-between;
+  height:45px;
+  background:#EEEEEE;
+  font-size:16px;
+  line-height:37px;
+  border:none;
+  border-radius: 4px 4px 0px 0px;
+}
+.dijitDialogCloseIcon{
+  top:11px;
+}
+.dijitDialogCloseIcon:hover{
+  top:11px;
+}
+.dijitDialogTitleBar span{
+  color:#797979;
+}
+.dijitDialogPaneContent{
+  border:none;
+}
+.dijitDialog{
+  border:none;
+  border-radius: 4px;
+}
+.dijitDialogButtonBar{
+  border-radius:0px 0px 4px 4px;
+}
+.dijitDialogButtonBar .hob-ser button{
+  display: inline-block;
+  width: 55px;
+  height: 25px;
+  padding: 6px 15px;
+}
+.dijitDialogButtonBar .hob-ser button:nth-child(1){
+  margin-left: 0px;
+  background:#39aef9;
+  color: #fff;
+}
+.dijitDialogButtonBar .hob-ser span{
+  cursor:pointer;
+  display: inline-block;
+}
+
+.dijitDialogButtonBar .hob-ser .rests{
+  margin-left: 12px;
+  cursor:pointer
+}
+.dijitDialogTitle{
+  font-size:16px;
+  margin-left:15px;
+}
+.dijitDialogTitleBar span:nth-child(2){
+  cursor:pointer;
+  margin-right:15px;
+}

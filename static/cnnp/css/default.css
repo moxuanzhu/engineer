@@ -1,0 +1,1703 @@
+/*-------------------------------------------stylesheet-----------------------------------------------------------------------------*/
+/*整体样式html,body*/
+html, body {
+  color: rgb(85, 85, 85);
+  font-family: 微软雅黑, 宋体, Tahoma, Arial;
+  font-size: 12px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+/*过度页面加载样式*/
+.loadingOverlay {
+  background: #fff url(../images/banner/loadingAnimation.gif) no-repeat 10px 23px;
+}
+.pageOverlay {
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1001;
+  display: block;
+}
+.loadingOverlay .loadingMessage {
+  padding: 25px 40px;
+  color: #999;
+}
+
+/*数据请求progress*/
+.progressMask {
+  background: #ffffff url(../images/progress/progressAnim.gif) no-repeat center center;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  filter: Alpha(opacity = 50);
+  position: absolute;
+  z-index: 9999;
+  left: 0px;
+  top: 0px;
+}
+
+.maskInfo {
+  display: block;
+  left: 50%;
+  margin-left: 28px;
+  margin-top: 10px;
+  position: relative;
+  top: 50%;
+}
+
+/*ecmApp主界面样式*/
+.ecmApplicationLayout {
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  display: block;
+}
+.ecm_bg {
+  width: 100%;
+  height: 100%;
+}
+
+/*-------------------------------------------banner-----------------------------------------------------------------------------*/
+/*nav导航样式*/
+.ecm_banner_bg {
+
+  background-image: url(../images/banner/u1.jpg);
+  background-repeat: repeat-x;
+  /* background:url(../images/banner/banner_bg1.jpg) repeat-x scroll 0 0 transparent;*/
+  height: 90px;
+  width: 100%;
+ /*background-size:100%;*/
+}
+.borderContainer{
+position: absolute !important;
+z-index: 2;
+overflow: hidden;
+display: block;
+}
+
+/*nav左侧logo*/
+.ecm_banner_logo {
+  background-image: url(../images/banner/banner_logo.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  margin: 2px 0 0 0px;
+  height: 40px;
+  width: 200px;
+  background-size: 100%;
+}
+/*nav右侧*/
+.ecm_bnaaer_l {
+  display: block;
+  padding: 3px;
+  overflow: visible;
+  padding-left: 4px !important;
+  margin: 0;
+}
+.ecm_bnaaer_l_inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+/*nav标题*/
+.ecm_sys_name {
+  position: absolute;
+  background-image: url(../images/banner/manage_platform.png);
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 300px;
+}
+.name_and_co {
+  margin: 14px 10px;
+  float: right;
+  color: #626262;
+  font-size: 12px;
+}
+.ecm_wel_name {
+  display: inline-block;
+}
+.ecmHeader .userLogout {
+  text-decoration: none;
+  color: rgb(85, 85, 85);
+  font-family: 微软雅黑, 宋体, Tahoma, Arial;
+  font-size: 12px;
+}
+.ecmHeader .userLogout:hover {
+  text-decoration: none;
+  color: #428bca;
+  font-family: 微软雅黑, 宋体, Tahoma, Arial;
+  font-size: 12px;
+}
+
+/*-------------------------------------------nav-----------------------------------------------------------------------------*/
+.systemnavigation {
+  line-height: 16px;
+  overflow: auto;
+  /*z-index: 10;*/
+  display: block;
+  position: absolute !important;
+  margin: 0;
+}
+/*nav content_top*/
+#content_top {
+  background: url(../images/nav/sp_bg.png) repeat-x center;
+  height: 36px;
+  border-right: solid 1px #C2C2C2;
+}
+.dijitInline {
+  display: inline-block;
+  border: 0;
+  padding: 0;
+  vertical-align: middle;
+  line-height: normal;
+  font: inherit;
+  color: inherit;
+  border-collapse: separate;
+}
+.dijitButtonNode {
+  height: 19px;
+  width: 35px;
+  display: block;
+}
+.dijitButtonContents {
+  display: block;
+  cursor: pointer;
+  white-space: nowrap;
+  background-repeat: repeat-x;
+  vertical-align: middle;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  line-height: normal;
+  font: inherit;
+  color: inherit;
+}
+.dijitDownArrowButton .dijitButtonText {
+  height: 19px;
+}
+.dijitButtonText {
+  font-family: "微软雅黑", Arial, "宋体", verdana;
+  font-size: 12px;
+  padding: 0 0.3em;
+  text-align: center;
+  display: inline-block;
+  border: 0;
+  line-height: normal;
+  font: inherit;
+  color: inherit;
+  white-space: nowrap;
+}
+.menuIconECM_h {
+  background-position: -18px -18px;
+}
+.quickMenuIcon {
+  background-image: url(../images/nav/quickMenuIcons.png);
+  background-repeat: no-repeat;
+  height: 18px;
+  width: 18px;
+  font-family: "微软雅黑", Arial, "宋体", verdana;
+  font-size: 12px;
+  text-align: center;
+}
+
+/*nav点击菜单*/
+.cnnp_nav_dropdownMenu {
+  position: absolute;
+  visibility: hidden;
+  z-index: 100;
+  overflow: hidden;
+  width: 84px;
+  background-color: white;
+  border: dimgray 1px solid !important;
+  border: buttonhighlight menu menu buttonhighlight 2px outset;
+  padding: 1px !important;
+  padding: 1px 1px 1px 0px;
+  font-size: 12px;
+}
+
+.cnnp_nav_dropdownMenu a {
+  display: block;
+  width: 100%;
+  padding: 2px 2px 2px 2px;
+  cursor: default;
+  text-decoration: none;
+  color: #555;
+  font-family: '微软雅黑', '宋体', arial;
+}
+
+.cnnp_nav_dropdownMenu a:hover {
+  background-color:#337ab7;
+  color:white;
+}
+
+.menuIconECM_dm {
+  background-position: 0px -35px;
+}
+
+.menuIconECM_bpm {
+  background-position: 0px -53px;
+}
+
+.dijitArrowButtonInner {
+  background-image: url(../images/nav/commonFormArrows.png);
+  background-position: -40px 52%;
+  border: 0 none;
+  margin-top: 5px;
+  width: 11px;
+  height: 12px;
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+}
+.templatemanage_nosel_n {
+  background-image: url(../images/nav/theme.gif);
+  cursor: pointer;
+}
+.myevent_nosel_n {
+  background-image: url(../images/nav/myevents.gif);
+  cursor: pointer;
+}
+.help_icon_n {
+  background-image: url(../images/nav/help_nosel.png);
+  cursor: pointer;
+}
+
+
+/*div ul1*/
+.menu_dm1 {
+    width: 100%;
+}
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+.menu_dm1 li {
+    width: 100%;
+}
+ol li, ul li {
+    font-size: 1em;
+    line-height: 1.5em;
+    margin: 0;
+}
+.menu_dm1 li a {
+    width: 100%;
+    height: 30px;
+    display: block;
+    position: relative;
+    color: #555;
+    margin: 0;
+    padding: 0;
+    font-family: '微软雅黑', '宋体', arial;
+}
+.systemnavigation a {
+    cursor: pointer;
+}
+.menu_dm1 li a .menudm_left {
+    width: 10px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.menu_dm1 li a .menudm_middle {
+    background: url(../images/nav/menudm_link_middle.png) left top repeat-x;
+}
+.menu_dm1 li a .menudm_middle {
+    height: 24px;
+    padding: 6px 0 0 15px;
+    color: #58606c;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    display: block;
+    height: 100%;
+}
+.systemnavigation .menuIconTemplateManage {
+    background-image: url(../images/nav/theme.gif);
+    background-repeat: no-repeat;
+}
+.systemnavigation .menuIconMatterManage {
+    background-image: url(../images/nav/myevents.gif);
+    background-repeat: no-repeat;
+    height: 19px;
+}
+.systemnavigation .menuIconHelp {
+    background-image: url(../images/nav/help_nosel.png);
+    background-repeat: no-repeat;
+}
+.sysNavMenuItem {
+    background-position: 0 0.1em;
+    height: auto;
+    line-height: 1.5em;
+    padding-left: 23px;
+    text-align: left;
+    width: auto;
+}
+.menu_dm1 li a .menudm_right {
+    width: 10px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/*一级导航a覆盖样式*/
+.menu_dm1 li a:hover .menudm_middle {
+    background: url(../images/nav/menudm_hover_middle.png) left top repeat-x;
+}
+
+/*二级导航*/
+.menu_dm1 li ul.childnav2 {
+    width: 100%;
+}
+ol li, ul li {
+    font-size: 1em;
+    line-height: 1.5em;
+    margin: 0;
+}
+.menu_dm1 li ul.childnav2 li a {
+    width: 100%;
+    height: 30px;
+    display: block;
+    position: relative;
+}
+.menu_dm1 li ul.childnav2 li a .menudm2_left {
+    width: 0px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 100%;
+}
+.menu_dm1 li ul.childnav2 li a .menudm2_middle {
+    background: url(../images/nav/tree_c1_n.png) center top repeat-x;
+    color: #d1d3d4;
+    height: 100%;
+}
+.menu_dm1 li ul.childnav2 li a .menudm2_middle {
+    height: 24px;
+    padding: 6px 0 0 25px;
+    color: #d1d3d4;
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: block;
+    height: 100%;
+}
+.sysNavMenuItem {
+    background-position: 0 0.1em;
+    height: auto;
+    line-height: 1.5em;
+    padding-left: 23px;
+    text-align: left;
+    width: auto;
+}
+.menu_dm1 li ul.childnav2 li a .menudm2_right {
+    width: 0px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+.menu_dm1 li ul.childnav2 li a:hover .menudm2_middle {
+    background: url(../images/nav/tree_c1_h.png) center top repeat-x;
+    height: 100%;
+}
+/*一级导航被选中样式*/
+.menu_dm1 li a.menu_dm_sel .menudm_middle {
+    background: url(../images/nav/menu_sel_middle.png) left top repeat-x;
+    color: #fff;
+}
+/*二级导航被选中样式*/
+.menu_dm1 li ul.childnav2 li a.menu_dm_sel .menudm2_middle {
+    background: url(../images/nav/tree_c1_h.png) center top repeat-x;
+}
+
+/*div ul2*/
+/*.menu_dm {
+  width: 100%;
+}
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+.menu_dm li {
+  width: 100%;
+}
+ol li, ul li {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin: 0;
+}
+.menu_dm li a {
+  width: 100%;
+  height: 30px;
+  display: block;
+  position: relative;
+  color: #555;
+  margin: 0;
+  padding: 0;
+  font-family: '微软雅黑', '宋体', arial;
+}
+.systemnavigation a {
+  cursor: pointer;
+}
+.menu_dm li a .menudm_left {
+  width: 10px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+}
+.menu_dm li a .menudm_middle {
+  background: url(../images/nav/tree_c1_n.png) center top repeat-x;
+}
+.menu_dm li a .menudm_middle {
+  height: 24px;
+  padding: 6px 0 0 15px;
+  color: #d1d3d4;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  display: block;
+  height: 100%;
+}
+.systemnavigation .menuIconTemplateManage {
+  !*background-image: url(../images/nav/documents.gif);*!
+  background-repeat: no-repeat;
+}
+.systemnavigation .menuIconMatterManage {
+  !*background-image: url(../images/nav/myevents.gif);*!
+  background-repeat: no-repeat;
+  height: 19px;
+}
+.systemnavigation .menuIconHelp {
+  !*background-image: url(../images/nav/symbol_question.gif);*!
+  background-repeat: no-repeat;
+}
+
+.systemnavigation .menuIconInternational {
+  !*background-image: url(../images/nav/international.png);*!
+  background-repeat: no-repeat;
+  background-size: 9%;
+  background-position: 0px -1px;
+}
+
+.systemnavigation .menuIconInternationalMeeting {
+  !*background-image: url(../images/nav/internationalMeeting.png);*!
+  background-repeat: no-repeat;
+  background-size: 9%;
+  background-position: 0px -1px;
+}
+
+.sysNavMenuItem {
+  background-position: 0 0.1em;
+  height: auto;
+  line-height: 1.5em;
+  padding-left: 23px;
+  text-align: left;
+  width: auto;
+}
+.menu_dm li a .menudm_right {
+  width: 10px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+!*一级导航a覆盖样式*!
+.menu_dm li a:hover .menudm_middle {
+  background: url(../images/nav/tree_c1_h.png) center top repeat-x;
+  height: 100%;
+}
+
+!*二级导航*!
+.menu_dm li ul.childnav2 {
+  width: 100%;
+}
+ol li, ul li {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin: 0;
+}
+.menu_dm li ul.childnav2 li a {
+  width: 100%;
+  height: 30px;
+  display: block;
+  position: relative;
+}
+.menu_dm li ul.childnav2 li a .menudm2_left {
+  width: 0px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 100%;
+}
+.menu_dm li ul.childnav2 li a .menudm2_middle {
+  background: url(../images/nav/tree_c1_n.png) center top repeat-x;
+  color: #d1d3d4;
+  height: 100%;
+}
+.menu_dm li ul.childnav2 li a .menudm2_middle {
+  height: 24px;
+  padding: 6px 0 0 25px;
+  color: #d1d3d4;
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: block;
+  height: 100%;
+}
+.sysNavMenuItem {
+  background-position: 0 0.1em;
+  height: auto;
+  line-height: 1.5em;
+  padding-left: 23px;
+  text-align: left;
+  width: auto;
+}
+.menu_dm li ul.childnav2 li a .menudm2_right {
+  width: 0px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+.menu_dm li ul.childnav2 li a:hover .menudm2_middle {
+  background: url(../images/nav/tree_c1_h.png) center top repeat-x;
+  height: 100%;
+}
+!*一级导航被选中样式*!
+.menu_dm li a.menu_dm_sel .menudm_middle {
+  background: url(../images/nav/tree_c1_h.png) left top repeat-x;
+  color: #d1d3d4;
+}
+!*二级导航被选中样式*!
+.menu_dm li ul.childnav2 li a.menu_dm_sel .menudm2_middle {
+  background: url(../images/nav/tree_c1_h.png) center top repeat-x;
+}*/
+
+/*------------------------------------------- split bar -----------------------------------------------------------------------------*/
+.cnnpSplitterV {
+  width: 5px;
+  background-color: #EDEDED;
+  border: 1px solid #C2C2C2;
+  border-bottom-width: 0px;
+  border-top-width: 0px;
+  overflow: hidden;
+  cursor: col-resize;
+}
+
+.cnnpSplitterV:hover {
+  width: 5px;
+  background-color: #EDEDED;
+  border: 1px solid #C2C2C2;
+  border-bottom-width: 0px;
+  border-top-width: 0px;
+  cursor: col-resize;
+}
+
+.cnnpSplitterThumb {
+  background: #b5bcc7 none;
+  height: 19px;
+  left: 1px;
+  width: 1px;
+  margin: 0;
+  overflow: hidden;
+  top: 49%;
+  cursor: col-resize;
+  position: absolute;
+}
+
+.cnnpSplitterThumb:hover {
+  background: #759dc0 none;
+  height: 19px;
+  left: 1px;
+  width: 1px;
+  margin: 0;
+  overflow: hidden;
+  top: 49%;
+  cursor: col-resize;
+}
+
+
+/*------------------------------------------- content -----------------------------------------------------------------------------*/
+
+/*--------------------------- searchbar -------------------------------*/
+.searchPaneBG {
+  background: url(../images/nav/sp_bg.png) repeat-x center;
+  height: 36px;
+}
+
+.searchPaneToolsBar {
+  position: absolute ;
+  z-index: 2;
+  overflow: hidden;
+  display: block;
+
+}
+
+.searchContentPane {
+  display: block;
+  overflow: auto;
+}
+
+.ecmFieldLabel {
+  display: inline-block;
+  color: #666;
+  font-size: 1.0em;
+  vertical-align: text-bottom;
+  text-align: right;
+  width: 68px;
+  cursor: default;
+}
+
+.ecmFieldLabelText {
+  padding-right: 10px;
+  float: right;
+}
+
+.cnnp_ComboBox {
+  color: #555;
+  border-color: #8a8a8a;
+  background-image: none;
+  border: 1px solid #8a8a8a;
+  height: 22px;
+  background-color: #ffffff;
+  transition-property: background-color, border;
+  transition-duration: 0.35s;
+  vertical-align: middle;
+  background-position: left top;
+  background-repeat: no-repeat;
+  display: inline-block;
+  line-height: normal;
+  font: inherit;
+}
+
+
+/*--------------------------- content area -------------------------------*/
+.cnnp_ContentPane {
+  display: block;
+  background-color: #ffffff;
+  overflow: auto;
+  position: absolute !important;
+  z-index: 2;
+  font-family: '微软雅黑', '宋体', arial;
+}
+
+.cnnp_BorderContainer_0 {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  display: block;
+  margin: 0;
+}
+
+.cnnp_StackContainer_0 {
+  position: absolute !important;
+  z-index: 2;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+}
+
+.cnnp_EventManageView_0 {
+  border: none !important;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  display: block !important;
+  margin: 0;
+}
+
+.cnnp_EventManageMainPane_0 {
+  border: none;
+  background-color: #ffffff;
+  overflow: hidden;
+  display: block;
+  position: absolute !important;
+  z-index: 2;
+  margin: 0;
+}
+
+.cnnp_StackContainer_1 {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+}
+
+.cnnp_TabContainer_0 {
+  border: none !important;
+  z-index: 0;
+  overflow-y: visible;
+  position: relative;
+  overflow: hidden;
+  display: block !important;
+  margin: 0;
+  padding: 0;
+}
+/*列表页面tab页样式*/
+.cnnp_TabContainer_0_tablist_menu {
+  z-index: 1;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.cnnp_TabListWrapper {
+  overflow: hidden;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.cnnp_TabContainerTop_tabs {
+  border-color: #b5bcc7;
+  border-bottom: 1px solid #b5bcc7;
+  display: block;
+  position: relative;
+  text-align: left;
+  z-index: 1;
+  overflow: visible !important;
+  margin: 0;
+  padding: 0;
+  height: 32px;
+}
+/*normal tab 样式*/
+.cnnp_TabContentTabUnchecked {
+  op: 1px;
+  width: 74px;
+  margin-right: -3px;
+  padding: 4px 6px;
+  border-bottom-width: 0;
+  min-width: 60px;
+  text-align: center;
+  background-image: url("../../static/images/content/tab/tabTopUnselected.png");
+  background-repeat: repeat-x;
+  background-image: -moz-linear-gradient(top, #ffffff 0px, #ffffff 1px, rgba(255, 255, 255, 0.1) 2px, rgba(255, 255, 255, 0.6) 7px, rgba(255, 255, 255, 0) 100%);
+  background-image: -webkit-linear-gradient(top, #ffffff 0px, #ffffff 1px, rgba(255, 255, 255, 0.1) 2px, rgba(255, 255, 255, 0.6) 7px, rgba(255, 255, 255, 0) 100%);
+  background-image: -o-linear-gradient(top, #ffffff 0px, #ffffff 1px, rgba(255, 255, 255, 0.1) 2px, rgba(255, 255, 255, 0.6) 7px, rgba(255, 255, 255, 0) 100%);
+  background-image: -ms-linear-gradient(top, #ffffff 0px, #ffffff 1px, rgba(255, 255, 255, 0.1) 2px, rgba(255, 255, 255, 0.6) 7px, rgba(255, 255, 255, 0) 100%);
+  -webkit-box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.04);
+  -moz-box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.04);
+  border: 1px solid #b5bcc7;
+  background-color: #efefef;
+  -webkit-transition-property: background-color, border;
+  -moz-transition-property: background-color, border;
+  transition-property: background-color, border;
+  -webkit-transition-duration: 0.35s;
+  -moz-transition-duration: 0.35s;
+  transition-duration: 0.35s;
+  color: #494949;
+  position: relative;
+  cursor: pointer;
+  white-space: nowrap;
+  z-index: 3;
+  display: inline-block;
+}
+
+/*tab 被选中样式*/
+.cnnp_TabContentTabChecked {
+  width: 76px;
+  border-radius: 2px 2px 0 0;
+  padding-bottom: 4px;
+  padding-top: 9px;
+  padding-left: 6px;
+  padding-right: 6px;
+  box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.05);
+  top: 1px;
+  margin-right: 1px;
+  border-bottom-width: 0;
+  min-width: 60px;
+  text-align: center;
+  background-repeat: repeat-x;
+  border-color: #b5bcc7;
+  background-color: #cfe5fa;
+  border: 1px solid #b5bcc7;
+  transition-property: background-color, border;
+  transition-duration: 0.35s;
+  display: inline-block;
+  cursor: default;
+  position: relative;
+  white-space: nowrap;
+  z-index: 3;
+  margin: 0;
+  background-image: url("../images/content/tab/tabTopSelected.png");
+  background-image: -moz-linear-gradient(top, #ffffff 0px, #ffffff 1px, rgba(255, 255, 255, 0) 2px, #ffffff 7px);
+  background-image: -webkit-linear-gradient(top, #ffffff 0px, #ffffff 1px, rgba(255, 255, 255, 0) 2px, #ffffff 7px);
+  background-image: -o-linear-gradient(top, #ffffff 0px, #ffffff 1px, rgba(255, 255, 255, 0) 2px, #ffffff 7px);
+  background-image: -ms-linear-gradient(top, #ffffff 0px, #ffffff 1px, rgba(255, 255, 255, 0) 2px, #ffffff 7px);
+  -webkit-box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.claro .dijitTabContainerTop-tabs .dijitTab {
+  top: 1px;
+  margin-right: 1px;
+  padding: 3px 6px;
+  border-bottom-width: 0;
+  min-width: 60px;
+  text-align: center;
+  background-image: url("../images/content/tab/tabTopUnselected.png");
+  background-repeat: repeat-x;
+  background-image: -moz-linear-gradient(top, #ffffff 0px, #ffffff 1px, rgba(255, 255, 255, 0.1) 2px, rgba(255, 255, 255, 0.6) 7px, rgba(255, 255, 255, 0) 100%);
+  background-image: -webkit-linear-gradient(top, #ffffff 0px, #ffffff 1px, rgba(255, 255, 255, 0.1) 2px, rgba(255, 255, 255, 0.6) 7px, rgba(255, 255, 255, 0) 100%);
+  background-image: -o-linear-gradient(top, #ffffff 0px, #ffffff 1px, rgba(255, 255, 255, 0.1) 2px, rgba(255, 255, 255, 0.6) 7px, rgba(255, 255, 255, 0) 100%);
+  background-image: -ms-linear-gradient(top, #ffffff 0px, #ffffff 1px, rgba(255, 255, 255, 0.1) 2px, rgba(255, 255, 255, 0.6) 7px, rgba(255, 255, 255, 0) 100%);
+  -webkit-box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.04);
+  -moz-box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.cnnp_TabButtonIcon {
+  vertical-align: text-bottom;
+  border: 0 none;
+  display: none;
+}
+
+.cnnp_TabContent_TabLabel {
+  min-height: 15px;
+  display: inline-block;
+  /*vertical-align: text-bottom;*/
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  cursor: default;
+}
+
+.cnnp_normaltab:hover {
+  border-color: #759dc0;
+  background-color: #abd6ff;
+  transition-duration: 0.25s;
+  color: #000000;
+}
+
+.cnnp_TabCloseButton {
+  vertical-align: text-bottom;
+  background: url("../images/content/tab/tabClose.png") no-repeat;
+  width: 11px;
+  height: 14px;
+  margin-left: -4px;
+  margin-right: 3px;
+  display: inline-block;
+  border: 0;
+  padding: 0;
+}
+
+.cnnp_TabCloseButton:hover {
+  vertical-align: text-bottom;
+  background: url("../images/content/tab/tabClose.png") no-repeat;
+  background-position: -14px;
+  width: 11px;
+  height: 14px;
+  margin-left: -4px;
+  margin-right: 3px;
+  display: inline-block;
+  border: 0;
+  padding: 0;
+}
+
+.cnnp_TabCloseText {
+  vertical-align: text-bottom;
+}
+
+.cnnp_DataTableBorderContainer_0 {
+  background: #ffffff;
+  z-index: 0;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #b5bcc7;
+  border-top: 0 solid white;
+  display: block;
+}
+
+.cnnp_DataTableBorderContainer_1 {
+  border: none !important;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  display: block !important;
+  margin: 0;
+}
+
+.cnnp_DataTableContentList_0 {
+  border: none;
+  position: absolute !important;
+  z-index: 2;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+}
+
+.cnnp_DataTableContentPane_0 {
+  overflow: hidden;
+  display: block;
+  margin: 0;
+}
+
+.cnnp_DataTableOptionBar_0 {
+  overflow: hidden;
+  display: block;
+}
+
+.cnnp_OptionBarBorderContainer {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  display: block;
+  margin: 0;
+}
+
+.cnnp_OptionBarContentPane {
+  display: block;
+  overflow: auto;
+  margin: 0;
+}
+
+.cnnp_OptionBarToolbar {
+  border-bottom: 1px solid #b5bcc7;
+  background-color: #efefef;
+  background-image: url("../images/toolbar/standardGradient.png");
+  background-repeat: repeat-x;
+  background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: -o-linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: -ms-linear-gradient(rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+  _background-image: none;
+  padding: 3.8px 0 2px 4px;
+  zoom: 1;
+}
+
+.cnnp_ToolbarBtnmin {
+  display: inline-block;
+  border: 0;
+  padding: 0;
+  vertical-align: middle;
+  margin: 0;
+  line-height: normal;
+  font: inherit;
+  color: inherit;
+  zoom: 1;
+}
+
+.cnnp_ToolbarBtn_Mid {
+  background-image: none;
+  color: #555;
+  height: auto;
+  padding: 1px 2px;
+  cursor: pointer;
+  display: block;
+  float: left;
+  white-space: nowrap;
+  margin: 0;
+  border: 0;
+  line-height: normal;
+  font: inherit;
+}
+
+.ecmIconTemplateCreate {
+  background-image: url(../images/content/icon/document_add.gif);
+  height: 19px;
+  width: 18px;
+  display: inline-block;
+  border: 0;
+  padding: 0;
+  vertical-align: middle;
+  line-height: normal;
+  font: inherit;
+  color: inherit;
+  margin: 0;
+  cursor: pointer;
+  white-space: nowrap;
+  zoom: 1;
+}
+
+.ecmIconTableExport {
+  background-image: url(../images/content/icon/planTable_export.gif);
+  height: 19px;
+  width: 18px;
+  display: inline-block;
+  border: 0;
+  padding: 0;
+  vertical-align: middle;
+  line-height: normal;
+  font: inherit;
+  color: inherit;
+  margin: 0;
+  cursor: pointer;
+  white-space: nowrap;
+  zoom: 1;
+}
+
+.ecmIconPlanFormExport {
+  background-image: url(../images/content/icon/planForm_export.gif);
+  height: 19px;
+  width: 18px;
+  display: inline-block;
+  border: 0;
+  padding: 0;
+  vertical-align: middle;
+  line-height: normal;
+  font: inherit;
+  color: inherit;
+  margin: 0;
+  cursor: pointer;
+  white-space: nowrap;
+  zoom: 1;
+}
+
+.ecmIconZipExport {
+  background-image: url(../images/content/icon/zip_export.gif);
+  height: 19px;
+  width: 18px;
+  display: inline-block;
+  border: 0;
+  padding: 0;
+  vertical-align: middle;
+  line-height: normal;
+  font: inherit;
+  color: inherit;
+  margin: 0;
+  cursor: pointer;
+  white-space: nowrap;
+  zoom: 1;
+}
+
+.ecmIconMatterEdit {
+  background-image: url(../images/content/icon/document_edit.gif);
+  height: 19px;
+  width: 18px;
+  display: inline-block;
+  border: 0;
+  padding: 0;
+  vertical-align: middle;
+  line-height: normal;
+  font: inherit;
+  color: inherit;
+  margin: 0;
+  cursor: pointer;
+  white-space: nowrap;
+  zoom: 1;
+}
+
+.ecmIconStateUpdate {
+  background-image: url(../images/content/icon/cog.gif);
+  height: 19px;
+  width: 18px;
+  display: inline-block;
+  border: 0;
+  padding: 0;
+  vertical-align: middle;
+  line-height: normal;
+  font: inherit;
+  color: inherit;
+  margin: 0;
+  cursor: pointer;
+  white-space: nowrap;
+  zoom: 1;
+}
+
+.ecmIconUserAdd {
+  background-image: url(../images/content/icon/user_add.gif);
+  height: 19px;
+  width: 18px;
+  display: inline-block;
+  border: 0;
+  padding: 0;
+  vertical-align: middle;
+  line-height: normal;
+  font: inherit;
+  color: inherit;
+  margin: 0;
+  cursor: pointer;
+  white-space: nowrap;
+  zoom: 1;
+}
+
+.ecmIconDocumentAdd {
+  background-image: url(../images/content/icon/folder_add.gif);
+  height: 19px;
+  width: 18px;
+  display: inline-block;
+  border: 0;
+  padding: 0;
+  vertical-align: middle;
+  line-height: normal;
+  font: inherit;
+  color: inherit;
+  margin: 0;
+  cursor: pointer;
+  white-space: nowrap;
+  zoom: 1;
+}
+
+.ecmIconFormManagement {
+  background-image: url(../images/content/icon/application_form.gif);
+  height: 19px;
+  width: 18px;
+  display: inline-block;
+  border: 0;
+  padding: 0;
+  vertical-align: middle;
+  line-height: normal;
+  font: inherit;
+  color: inherit;
+  margin: 0;
+  cursor: pointer;
+  white-space: nowrap;
+  zoom: 1;
+}
+
+.ecmIconHistory {
+  background-image: url(../images/content/icon/document_search.gif);
+  height: 19px;
+  width: 18px;
+  display: inline-block;
+  border: 0;
+  padding: 0;
+  vertical-align: middle;
+  line-height: normal;
+  font: inherit;
+  color: inherit;
+  margin: 0;
+  cursor: pointer;
+  white-space: nowrap;
+  zoom: 1;
+}
+
+.ecmIconSummaryBack {
+  background-image: url(../images/content/icon/arrow_left.gif);
+  height: 19px;
+  width: 18px;
+  display: inline-block;
+  border: 0;
+  padding: 0;
+  vertical-align: middle;
+  line-height: normal;
+  font: inherit;
+  color: inherit;
+  margin: 0;
+  cursor: pointer;
+  white-space: nowrap;
+  zoom: 1;
+}
+
+.ecmIconFileStorage {
+  background-image: url(../images/content/icon/database_folder.gif);
+  height: 19px;
+  width: 18px;
+  display: inline-block;
+  border: 0;
+  padding: 0;
+  vertical-align: middle;
+  line-height: normal;
+  font: inherit;
+  color: inherit;
+  margin: 0;
+  cursor: pointer;
+  white-space: nowrap;
+  zoom: 1;
+}
+
+.ecmIconSummaryExport {
+  background-image: url(../images/content/icon/document_right.gif);
+  height: 19px;
+  width: 18px;
+  display: inline-block;
+  border: 0;
+  padding: 0;
+  vertical-align: middle;
+  line-height: normal;
+  font: inherit;
+  color: inherit;
+  margin: 0;
+  cursor: pointer;
+  white-space: nowrap;
+  zoom: 1;
+}
+
+.ecmIconGroupOpinionImport {
+  background-image: url(../images/content/icon/document_up.gif);
+  height: 19px;
+  width: 18px;
+  display: inline-block;
+  border: 0;
+  padding: 0;
+  vertical-align: middle;
+  line-height: normal;
+  font: inherit;
+  color: inherit;
+  margin: 0;
+  cursor: pointer;
+  white-space: nowrap;
+  zoom: 1;
+}
+
+.ecmIconPassportDelete {
+  background-image: url(../images/content/icon/symbol_multiplication.gif);
+  height: 19px;
+  width: 18px;
+  display: inline-block;
+  border: 0;
+  padding: 0;
+  vertical-align: middle;
+  line-height: normal;
+  font: inherit;
+  color: inherit;
+  margin: 0;
+  cursor: pointer;
+  white-space: nowrap;
+  zoom: 1;
+}
+
+/*------------------------------------------- data table -----------------------------------------------------------------------------*/
+.cnnp_TableGridContent {
+  overflow: hidden;
+  display: block;
+  margin: 0;
+}
+
+.cnnp_tablegrid {
+  margin: 0px;
+  padding: 0px;
+  border-collapse: collapse;
+  background-color: #fff;
+  border: 1px solid #DBDBDB;
+  position: relative;
+  font-family: Geneva, Arial, Helvetica, sans-serif;
+  outline: none;
+  overflow: auto;
+  -moz-outline-style: none;
+  border-left: 0px;
+}
+
+/*grid header*/
+.cnnp_GridMasterHeader {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = #303030, endColorstr = #303031);
+  background: none repeat scroll 0 0 #303030;
+  border: none;
+  font-size: 14px;
+  color: #CCCCCC;
+  font-family: "微软雅黑";
+  font-weight: 400;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.cnnp_GridHeader {
+  overflow: hidden;
+  cursor: default;
+  border-collapse: collapse;
+  background: none repeat scroll 0 0 #F2F2F2;
+  border: none;
+  font-size: 14px;
+  color: #000;
+  font-family: "微软雅黑";
+  font-weight: 400;
+}
+
+.cnnp_GridHeader:first-child {
+  margin-left: -1px;
+}
+
+.cnnp_GridHeader:first-child .cnnp_GridRowTable {
+  border-left-width: 0;
+}
+
+.cnnp_GridRowTable {
+  border-left: 1px solid #BCBCBC;
+  border-right: 1px solid #FFFFFF;
+  background-color: transparent;
+  table-layout: fixed;
+  width: 0;
+  empty-cells: show;
+}
+
+.cnnp_GridHeader table {
+  text-align: center;
+  padding: 0;
+}
+
+.cnnp_GridHeader tr:first-child .cnnp_GridCell {
+  padding: 2px 5px 3px;
+  border-top: 1px solid transparent;
+}
+
+.cnnp_GridCell {
+  outline: none;
+  padding: 3px 5px;
+  border: 1px solid transparent;
+  border-color: transparent #E5DAC8 #E5DAC8 transparent;
+  vertical-align: top;
+  background: transparent;
+  word-wrap: normal;
+}
+
+.cnnp_GridHeader .cnnp_GridCell:hover {
+  background-color: #2196F3;
+}
+
+.cnnp_DndItem {
+  -webkit-transition-duration: 0.25s;
+  -moz-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  -webkit-transition-property: background-color, border-color;
+  -moz-transition-property: background-color, border-color;
+  transition-property: background-color, border-color;
+  -webkit-user-select: none;
+}
+
+/*单选按钮*/
+.cnnp_CheckBox {
+  background-position: -15px;
+  background-image: url("../images/content/checkbox/checkboxRadioButtonStates.png");
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 16px;
+  margin: 0 2px 0 0;
+  padding: 0;
+  vertical-align: middle;
+  display: inline-block;
+  overflow: hidden;
+  font: inherit;
+  color: inherit;
+}
+.cnnp_GridRowSelector {
+  cursor: pointer;
+}
+
+/*normal th*/
+.cnnp_GridSortNode {
+  text-align: center;
+  padding: 0px;
+  border: 0px;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  white-space: normal;
+  background: none;
+  outline: none;
+  word-wrap: normal;
+  font-style: normal;
+  font-weight: normal;
+}
+
+/*grid view*/
+.cnnp_GridMasterView {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border-collapse: collapse;
+}
+
+.cnnp_GridView {
+  position: absolute;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.cnnp_GridScrollbox {
+  background-color: #fefefe;
+  position: relative;
+  overflow: auto;
+  width: 100%;
+}
+
+.cnnp_GridContent {
+  position: relative;
+  overflow: hidden;
+  -moz-outline-style: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cnnp_GridRow {
+  border: none;
+  background-color: #fff;
+  position: relative;
+  width: 9000em;
+}
+
+.cnnp_GridRow:hover {
+  background-image: none;
+  background-color: #0077b2;
+  color: #FFF;
+  border: 1px solid #FFFFFF;
+}
+
+.cnnp_GridRowTable {
+  table-layout: fixed;
+  width: 0;
+  empty-cells: show;
+  font-size: 100%;
+}
+
+/*-------------------------------------------------- pagination -----------------------------------------------------------*/
+.ecmPagination {
+  height: 28px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.ecmPagination .cnnpToolbar {
+ /* background-color: #CCC;
+  background-image: url(../images/content/toolbar/bottomBar_bg.gif);*/
+  background-repeat: repeat-x;
+  border: 1px;
+  height: 28px;
+  text-align: right;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding: 2px 0 2px 4px;
+  zoom: 1;
+}
+
+.ecmPagination .field {
+  display: inline-block;
+  margin-left: 20px;
+  color: #000000;
+}
+
+.cnnp_PaginationValidationTextBox {
+  color: #555;
+  border-color: #8a8a8a;
+  background-image: none;
+  border: 1px solid #8a8a8a;
+  height: 22px;
+  background-color: #ffffff;
+  margin-top: -3px;
+  border-color: #b5bcc7;
+  -webkit-transition-property: background-color, border;
+  -moz-transition-property: background-color, border;
+  transition-property: background-color, border;
+  -webkit-transition-duration: 0.35s;
+  -moz-transition-duration: 0.35s;
+  transition-duration: 0.35s;
+  vertical-align: middle;
+  background-position: left top;
+  background-repeat: no-repeat;
+  display: inline-block;
+  padding: 0;
+  line-height: normal;
+  font: inherit;
+}
+
+.cnnp_DownArrowButtonContainer {
+  padding: 0;
+  border-color: #8a8a8a;
+  border-radius: 2px;
+  box-shadow: none;
+  transition-property: background-color;
+  transition-duration: 0.3s;
+  background-color: rgba(171, 214, 255, 0);
+  background-image: none;
+  border-color: #8a8a8a;
+  border-left: 1px solid #8a8a8a;
+  background-repeat: no-repeat;
+  width: 21px;
+  height: 22px;
+  border-width: 0 !important;
+  float: right;
+  text-align: center;
+}
+
+.cnnp_ArrowButtonInner {
+  background-color: transparent;
+  margin-top: 2px;
+  margin-left: 2px;
+  background-image: url(../images/page/commonFormArrows.png);
+  background-position: -35px 53%;
+  background-repeat: no-repeat;
+  margin: 0;
+  width: 16px;
+  padding: 1px 2px;
+  text-indent: -2em !important;
+  direction: ltr !important;
+  text-align: left !important;
+  height: auto !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  background: no-repeat center;
+  float: left;
+  line-height: normal;
+  font: inherit;
+  color: inherit;
+}
+
+
+/*--------------------------------------------------------- form ----------------------------------------------------*/
+.formSearchUser {
+  background-image: url(../images/form/user_search.gif);
+  cursor: pointer;
+}
+
+/*--------------------------------------------------------- modals ----------------------------------------------------*/
+/* 浮层 */
+.dijitDialogUnderlayWrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 998;
+  display: none;
+  background: transparent !important;
+}
+
+.dijitDialogUnderlay {
+  background: #acabab;
+  opacity: 0.5;
+}
+
+/* 模态 */
+.dijitDialog {
+  border: 1px solid #AAAAAA;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+}
+
+/* modals title */
+.dijitDialogTitleBar {
+  -moz-border-bottom-colors: none;
+  -moz-border-image: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background-color: #058BEC;
+
+  background-repeat: repeat-x;
+  border-color: -moz-use-text-color #FFFFFF #FFFFFF;
+  border-style: none solid solid;
+  border-width: medium 1px 1px;
+  padding: 4px 7px 4px;
+  text-align: center;
+  cursor: move;
+}
+
+.dijitDialogTitle {
+  color: #FFF;
+  font-size: 1.091em;
+  padding: 0 1px;
+}
+
+.dijitDialogCloseIcon {
+  background-image: url(../images/modal/dialog_closeIcon_up.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 5px;
+  height: 15px;
+  width: 21px;
+  top: 7px;
+  cursor: pointer;
+}
+
+.dijitDialogCloseIcon:hover {
+  background-color: darkgray;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 5px;
+  height: 15px;
+  width: 21px;
+  top: 7px;
+  cursor: pointer;
+}
+
+/* content */
+.dijitDialogPaneContent {
+  background: #ffffff repeat-x top left;
+  border-top: 1px solid #759dc0;
+  padding: 10px 8px;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  display: block;
+}
+
+/* buttonBar */
+.dijitDialogButtonBar {
+  /*background-image: url(../images/modal/bottomBar_bg.gif);*/
+  background-color: #EEEEEE;
+  background-repeat: repeat-x;
+ /* border-top: 1px solid #AAAAAA;*/
+  padding: 1px;
+  text-align: right;
+}
+
+/*--------------------------------------------------------- button ------------------------------------------*/
+.cnnp_SearchButtonNode {
+  background-color: #E5F2FE;
+  background-image: url(../images/button/btn_n.png);
+  background-position: center top;
+  background-repeat: repeat-x;
+  border-left: 1px solid #555;
+  border-right: 1px solid #555;
+  border-top: none;
+  border-bottom: 1px solid #555;
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  color: #56534f;
+  padding: 1px 10px;
+  height: 20px;
+  width: 50px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.cnnp_SearchButtonNode:hover {
+  color: #428bca;
+}
+
+/*------------------------------------------------- datetimepicker --------------------------------------------*/
+.dropdown-menu {
+  font-size: 12px;
+}
+
+/*当前状态高亮显示*/
+.hilite {
+  background: url(../images/nav/tree_c1_h.png) left top repeat-x;
+  color: #d1d3d4;
+}
+
+/*------------------------------------------------- 背景毛玻璃 --------------------------------------------*/
+.frosted-glass{
+  width: 287px;
+  height: 285px;
+  background: inherit;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -ms-filter: blur(5px);
+  -o-filter: blur(5px);
+  filter: blur(5px);
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=4, MakeShadow=false);
+}
+
+.bootpageBg {
+  /*background-image: url(../images/content/toolbar/bottomBar_bg.gif);*/
+  background-repeat: repeat-x;
+}

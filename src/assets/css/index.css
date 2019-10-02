@@ -1,0 +1,7 @@
+/* element-ui */
+.el-dialog {
+  margin-top: 0 !important;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 526px;
+}
