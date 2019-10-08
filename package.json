@@ -2,7 +2,7 @@
   "name": "GoldWind",
   "version": "1.0.0",
   "description": "天润新能 for PC",
-  "author": "zhanghongjie <zhanghongjie@tianrun.cn>",
+  "author": "",
   "private": true,
   "scripts": {
     "prod": "webpack-dev-server --inline --open --progress --config build/webpack.dev.conf.js",
